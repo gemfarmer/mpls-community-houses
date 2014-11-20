@@ -1,0 +1,90 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>House Profile</h3>
+      <p>Edit the following fields below to provide some content for your profile</p>
+    </div>
+    <div class="col-sm-12">
+      <form class="form" name="form" ng-submit="submit(form)" novalidate>
+
+      	<div class="form-group">
+          <label>House Name</label>
+
+          <input type="text" name="name" class="form-control" ng-model="house.name">
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <p>what makes you get down and dirty?</p>
+
+          <textarea type="text" name="description" class="form-control" ng-model="house.description"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+
+          <input type="text" name="address" class="form-control" ng-model="house.address">
+        </div>
+
+        <div class="form-group">
+          <label>Number of People</label>
+
+          <input type="text" name="number" class="form-control" ng-model="house.number">
+        </div>
+
+        <div class="form-group">
+          <label>Residents' Names</label>
+
+          <textarea type="text" name="residents" class="form-control" ng-model="house.residents"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Dietary Restrictions</label>
+
+          <textarea type="text" name="diet" class="form-control" ng-model="house.diet"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>House Email or Primary Contact Email</label>
+
+          <input type="email" name="email" class="form-control" ng-model="house.email">
+        </div>
+
+        <div class="form-group has-error">
+          <p class="help-block" ng-show="form.email.$error.email && submitted">
+             Please enter a valid email.
+          </p>
+
+          <p class="help-block">{{ errors.other }}</p>
+        </div>
+
+        <div class="form-group">
+          <label>Bonus Info</label>
+
+          <input type="text" name="bonus" class="form-control" ng-model="house.bonus">
+        </div>
+
+
+        <div>
+          <button class="btn btn-primary btn-lg btn-login" type="submit">
+            Save
+          </button>
+
+        </div>
+
+        <div class="form-group has-success">
+          <p class="help-block" ng-show="saveMessage && submitted">
+             Your profile has been saved!
+          </p>
+
+
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+  <hr>
+</div>
