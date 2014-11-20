@@ -1,0 +1,12 @@
+@mixin widths($content-width,$sidebar-width){
+  width:unquote("-moz-calc(")$content-width unquote("-")$sidebar-width unquote(")");
+  width:unquote("-o-calc(")$content-width unquote("-")$sidebar-width unquote(")");
+  width:unquote("-webkit-calc(")$content-width unquote("-")$sidebar-width unquote(")");
+  width:unquote("calc(")$content-width unquote("-")$sidebar-width unquote(")");
+}
+@mixin heights($content-height,$sidebar-height){
+  height:unquote("-moz-calc(")$content-height unquote("-")$sidebar-height unquote(")");
+  height:unquote("-o-calc(")$content-height unquote("-")$sidebar-height unquote(")");
+  height:unquote("-webkit-calc(")$content-height unquote("-")$sidebar-height unquote(")");
+  height:unquote("calc(")$content-height unquote("-")$sidebar-height unquote(")");
+}

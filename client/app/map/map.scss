@@ -1,0 +1,5 @@
+.mapContainer{
+	position: absolute;
+	width: 100%;
+	@include heights(100%,51px);
+}
