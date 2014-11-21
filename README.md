@@ -26,6 +26,9 @@ Fork the repo and start making pull-requests!
 Scaffolding: [Yeoman Angular FullStack Generator](https://www.npmjs.org/package/generator-angular-fullstack)
 To make additions to the architecture, it would be advisable to use their cli generation tools. They are consistent and helpful
 
+### License:
+COPYFARLEFT PUBLIC LICENSE. This is a form of [Peer Production License](http://p2pfoundation.net/Peer_Production_License)
+
 ### Production:
 
 ### Dev:
