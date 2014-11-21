@@ -5,7 +5,7 @@ This website was built with the intention of connecting people to the community 
 ## Contribute
 Fork the repo and start making pull-requests!
 
-#### To-Do
+#### Things that need to be done!
 * Replace House Profile with Google Form
 * Embed Form as "Housing Survey"
 * Link Survey Data to MongoHQ
