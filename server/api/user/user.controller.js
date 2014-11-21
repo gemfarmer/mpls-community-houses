@@ -135,7 +135,7 @@ exports.changePassword = function(req, res, next) {
  * Updates an existing user in the DB.
  */
 exports.update = function(req, res) {
-  console.log('YOYO',req,res)
+  // console.log('YOYO',req,res)
   if(req.body._id) { delete req.body._id; }
   User.findById(req.params.id, function (err, user) {
     if (err) { return handleError(res, err); }
