@@ -2,6 +2,17 @@
 
 This website was built with the intention of connecting people to the community houses in Minneapolis.
 
+## Contribute
+Fork the repo and start making pull-requests!
+
+#### To-Do
+Replace House Profile with Google Form
+Embed Form as "Housing Survey"
+Link Survey Data to MongoHQ
+Display Survey Data as table and as directory
+If address data is available, communicate with Google API to draw new pin on the map
+Work on image upload for housing profiles
+
 ## Architecture
 
 Scaffolding: [Yeoman Angular FullStack Generator](https://www.npmjs.org/package/generator-angular-fullstack)
