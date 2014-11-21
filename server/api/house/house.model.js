@@ -11,6 +11,7 @@ var HouseSchema = new Schema({
   diet: String,
   email: String,
   bonus: String,
+  link:String,
   houseId: String,
   user: Object
 });

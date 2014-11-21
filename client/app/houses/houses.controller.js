@@ -5,6 +5,5 @@ angular.module('mplsCommunityHousesApp')
     $scope.message = 'Hello';
     $http.get('/api/house').success(function(houses) {
       $scope.houses = houses;
-      console.log(houses)
     });
   });

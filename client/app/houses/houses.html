@@ -3,16 +3,17 @@
 <div class="col-md-12">
 
 	<div ng-repeat="house in houses">
-		{{house.name}}
-		<div ng-if="house.name && house.description">
-			<div>House Name: {{house.name}}</div>
-			<div>Description: {{house.description}}</div>
-			<div>Address: {{house.address}}</div>
-			<div># of Residents: {{house.number}}</div>
-			<div>Resident Names: {{house.residents}}</div>
-			<div>Dietary Restrictions: {{house.diet}}</div>
-			<div>House Contact: {{house.email}}</div>
-			<div>Extra Fun: {{house.bonus}}</div>
+		<!-- {{houses}} -->
+		<div class="col-xs-12 col-sm-6 col-md-4 jumbotron container houseProfile" ng-if="house.name && house.description">
+			<p>House Name: {{house.name}}</p>
+			<p>Description: {{house.description}}</p>
+			<p ng-if="house.address">Address: {{house.address}}</p>
+			<p ng-if="house.number"># of Residents: {{house.number}}</p>
+			<p ng-if="house.residents">Resident Names: {{house.residents}}</p>
+			<p ng-if="house.diet">Dietary Restrictions: {{house.diet}}</p>
+			<p ng-if="house.email">House Contact: {{house.email}}</p>
+			<p ng-if="house.bonus">Extra Fun: {{house.bonus}}</p>
+			<p><a ng-href="{{house.link}}" target="_blank" ng-if="house.link">House Link</a></p>
 		</div>
 	</div>
 </div>

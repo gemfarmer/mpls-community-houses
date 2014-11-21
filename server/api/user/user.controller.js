@@ -33,6 +33,7 @@ exports.create = function (req, res, next) {
     number: "",
     residents: "",
     address:"",
+    link: "",
     diet: "",
     email: "",
     bonus: ""
@@ -94,43 +95,6 @@ exports.changePassword = function(req, res, next) {
     }
   });
 };
-
-/**
- * Change HouseId
- */
-// exports.changeHouseId = function(req, res, next) {
-//   var userId = req.user.houseId;
-//   var oldId = String(req.body.oldId);
-//   var newId = String(req.body.newId);
-
-//   User.findById(userId, function (err, user) {
-//     user.houseId = newId;
-//     user.save(function(err) {
-//       if (err) return validationError(res, err);
-//       res.send(200);
-//     });
-
-//   });
-// };
-
-/**
- * Change House
- */
-// exports.changeHouse = function(req, res, next) {
-//   var userId = req.user.house;
-//   var oldId = String(req.body.oldId);
-//   var newId = String(req.body.newId);
-
-//   User.findById(userId, function (err, user) {
-//     user.house = newId;
-//     user.save(function(err) {
-//       if (err) return validationError(res, err);
-//       res.send(200);
-//     });
-
-//   });
-// };
-
 
 
 /**
