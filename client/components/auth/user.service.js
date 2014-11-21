@@ -12,6 +12,9 @@ angular.module('mplsCommunityHousesApp')
           controller:'password'
         }
       },
+      update: {
+        method: 'PUT'
+      },
       get: {
         method: 'GET',
         params: {

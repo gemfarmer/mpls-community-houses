@@ -35,6 +35,7 @@
     @include heights(100%,31px);
     position: absolute;
     width: 100%;
+    overflow: auto;
 }
 .lead{
     text-align: left;
