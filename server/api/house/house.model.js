@@ -10,6 +10,7 @@ var HouseSchema = new Schema({
   residents: String,
   diet: String,
   email: String,
+  address: String,
   bonus: String,
   link:String,
   houseId: String,
