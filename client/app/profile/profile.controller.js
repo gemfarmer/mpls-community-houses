@@ -4,13 +4,9 @@ angular.module('mplsCommunityHousesApp')
   .controller('ProfileCtrl', function ($scope,$timeout,$http, User,Auth) {
   	$scope.house = {};
 
-  	var house = Auth.getCurrentUser().house;
-  	if(house){
-  		$scope.house = house;
-
-  	}
-
-    // console.log($scope.house, User.get(), Auth.getCurrentUser()._id)
+    $http.get('/api/house/'+Auth.getCurrentUser().houseId).success(function(house) {
+      $scope.house = house;
+    });
 
     $scope.errors = {};
     $scope.saveMessage = false;
@@ -19,11 +15,12 @@ angular.module('mplsCommunityHousesApp')
       $scope.submitted = true;
 
       if(form.$valid) {
-      	console.log($scope.house)
-        debugger
 
         var updatedUser = User.get();
         updatedUser.house = $scope.house;
+        $http.put('/api/house/'+Auth.getCurrentUser().houseId, $scope.house).success(function(house) {
+          $scope.house = house;
+        });
         var id = { id: Auth.getCurrentUser()._id };
         User.update(id, updatedUser,function(req,res){
           $scope.saveMessage = true;

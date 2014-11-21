@@ -1,5 +1,18 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 <br>
 <div class="col-md-12">
-This is the houses view.
+
+	<div ng-repeat="house in houses">
+		{{house.name}}
+		<div ng-if="house.name && house.description">
+			<div>House Name: {{house.name}}</div>
+			<div>Description: {{house.description}}</div>
+			<div>Address: {{house.address}}</div>
+			<div># of Residents: {{house.number}}</div>
+			<div>Resident Names: {{house.residents}}</div>
+			<div>Dietary Restrictions: {{house.diet}}</div>
+			<div>House Contact: {{house.email}}</div>
+			<div>Extra Fun: {{house.bonus}}</div>
+		</div>
+	</div>
 </div>

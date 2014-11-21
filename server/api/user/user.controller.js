@@ -27,19 +27,21 @@ exports.index = function(req, res) {
  */
 exports.create = function (req, res, next) {
   var newUser = new User(req.body);
-  var newHouse = new House();
-  var newHouse = {
+  var newHouse = new House({
     name: "",
     description: "",
     number: "",
     residents: "",
+    address:"",
     diet: "",
     email: "",
     bonus: ""
-  };
+  });
+  newHouse.save();
+
   newUser.provider = 'local';
   newUser.role = 'user';
-  newUser.houseId = "a"+Math.random()*100000000+"hash";
+  newUser.houseId = newHouse._id;
   newUser.house = newHouse;
   newUser.save(function(err, user) {
     if (err) return validationError(res, err);
