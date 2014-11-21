@@ -42,20 +42,20 @@ var all = {
   },
 
   facebook: {
-    clientID:     process.env.FACEBOOK_ID || 'mpls-community-houses-id',
-    clientSecret: process.env.FACEBOOK_SECRET || 'mpls-community-houses-secret',
+    clientID:     process.env.FACEBOOK_ID || '1507711859497201',
+    clientSecret: process.env.FACEBOOK_SECRET || '4e7fea3878801fb24f6170481e29d00b',
     callbackURL:  (process.env.DOMAIN || '') + '/auth/facebook/callback'
   },
 
   twitter: {
-    clientID:     process.env.TWITTER_ID || 'mpls-community-houses-id',
-    clientSecret: process.env.TWITTER_SECRET || 'mpls-community-houses-secret',
+    clientID:     process.env.TWITTER_ID || 'id',
+    clientSecret: process.env.TWITTER_SECRET || 'secret',
     callbackURL:  (process.env.DOMAIN || '') + '/auth/twitter/callback'
   },
 
   google: {
-    clientID:     process.env.GOOGLE_ID || 'mpls-community-houses-id',
-    clientSecret: process.env.GOOGLE_SECRET || 'mpls-community-houses-secret',
+    clientID:     process.env.GOOGLE_ID || 'id',
+    clientSecret: process.env.GOOGLE_SECRET || 'secret',
     callbackURL:  (process.env.DOMAIN || '') + '/auth/google/callback'
   }
 };
