@@ -5,13 +5,21 @@ This website was built with the intention of connecting people to the community 
 ## Contribute
 Fork the repo and start making pull-requests!
 
-#### Things that need to be done!
+#### Things that need to be done! (From Highest to lowest priority)
 * Replace House Profile with Google Form
 * Embed Form as "Housing Survey"
 * Link Survey Data to MongoHQ
 * Display Survey Data as table and as directory
 * If address data is available, communicate with Google API to draw new pin on the map
+* Within Housing add 'Avalable rooms/spots'
+* Add section to Houses page which has listings for available spots, people looking for spots
+* Create form to get info about people looking for spots
+* Create Dropdown tab on housing for (houses, listings, free agents)
+* Add 'Organizations'/'Meet-ups'
+* Add 'News' Link
 * Work on image upload for housing profiles
+* Add home real estate listings (preferably pull from API)
+* 
 
 ## Architecture
 
