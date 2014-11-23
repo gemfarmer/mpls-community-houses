@@ -3,6 +3,8 @@
 <div class="col-md-12">
 	<p>More to come...</p>
 	<br>
+	<button class='btn btn-default'><a ui-sref="houses.directory">Directory</a></button>
+	<div ui-view="" class="housesSubViews"></div>
 	<div ng-repeat="house in houses">
 		<!-- {{houses}} -->
 		<div class="col-xs-12 col-sm-6 col-md-4 jumbotron container houseProfile" ng-if="house.name && house.description">

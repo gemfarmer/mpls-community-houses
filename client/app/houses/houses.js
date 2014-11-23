@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('mplsCommunityHousesApp')
-  .config(function ($stateProvider) {
+  .config(function ($stateProvider,$urlRouterProvider) {
+  	$urlRouterProvider.otherwise('/')
     $stateProvider
       .state('houses', {
         url: '/houses',
