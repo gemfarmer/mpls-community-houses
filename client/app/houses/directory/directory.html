@@ -1,3 +1,29 @@
-<div class="col-md-12">
-This is the directory view.
-</div>
+
+<table class="table table-striped table-hover">
+  <thead>
+  	<tr>
+  		<th>House Name</th>
+  		<th>Description</th>
+  		<th>Address</th>
+  		<th># of Residents</th>
+  		<th>Resident Names</th>
+  		<th>Dietary Restrictions</th>
+  		<th>House Contact</th>
+  		<th>Extra Fun</th>
+  		<th>House Link</th>
+  	</tr>
+  </thead>
+  <tbody>
+  	<tr ng-repeat="house in houses" ng-if="house.name && house.description">
+  		<th>{{house.name}}</th>
+  		<td>{{house.description}}</td>
+  		<td>{{house.address}}</td>
+  		<td>{{house.number}}</td>
+  		<td>{{house.residents}}</td>
+  		<td>{{house.diet}}</td>
+  		<td><a ng-href="mailto:{{house.email}}" ng-if="house.email">{{house.email}}</a></td>
+  		<td>{{house.bonus}}</td>
+  		<td><a ng-href="{{house.link}}" target="_blank" ng-if="house.link">More info</a></td>
+  	</tr>
+  </tbody>
+</table>

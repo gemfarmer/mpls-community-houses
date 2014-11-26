@@ -6,4 +6,9 @@ angular.module('mplsCommunityHousesApp')
     $http.get('/api/house').success(function(houses) {
       $scope.houses = houses;
     });
+    $scope.visiblePane = 'directory';
+    $scope.togglePane = function(pane){
+    	console.log(pane)
+    	$scope.visiblePane = pane;
+    }
   });
